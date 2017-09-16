@@ -1,4 +1,4 @@
-# Computer Skills for Physicts Seminar
+# Computer Skills for Physicist Seminar
 
 The goal of this seminar series is to help graduate students in Physics 
 develop skills that will enhance their research. This will be initially targeted
@@ -12,3 +12,6 @@ applicable to any researcher.
 > Git is a free and open source distributed version control system designed to
 > handle everything from small to very large projects with speed and efficiency.
 (From the [Git Homepage](https://git-scm.com/))
+
+This seminar will focus on understanding how git works over giving a tutorial on
+the commands. 
