@@ -41,9 +41,41 @@ Branches, tags, commit hashes are all just labels to nodes in a tree.
 
 ## Rebasing vs. Merging
 
+Rebasing is moving one branch onto the end of the other. Merging takes the ends
+of the two branches and combines them. 
+
+Rebasing allows for a simple linear history of the master branch. Merging is
+simpler to implement but results in a messy history. 
 * [Git Documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 * [Example Network](https://github.com/previsualconsent/GitSeminarMergeRebase/network)
 
 
 ## Remotes (Push and Pull)
 
+With Git, each repository can contain the full history. There doesn't have to be
+a central repository
+
+```
+git remote add local /path/to/local/repo
+git remote add ssh-server ssh://user@server/project.git
+```
+
+### Pull
+
+Use `git pull` to update the local branch from the remote repository. A pull is a
+fetch (update local references to remote repositories) and then a merge. 
+
+### Push
+
+Use `git push` to send your local changes to a remote. This can either create a
+new branch or "fast forward" the remote branch to where your local branch is. 
+
+### GitHub
+We commonly use GitHub to host the repositories and it acts as a central server.
+
+Forking a repository on the website is cloning into your GitHub account. 
+
+On GitHub, use Pull Requests to offer your own contributions to other projects. 
+
+My favorite GitHub work flow is push to always push updates to a new remote
+branch, then use the GitHub Pull Request to merge them into master. 
