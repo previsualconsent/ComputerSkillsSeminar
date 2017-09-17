@@ -38,6 +38,11 @@ Branches, tags, commit hashes are all just labels to nodes in a tree.
   commit
 * Tags point to a fixed commit (useful for labeling version numbers)
 * Commit hashes reference the exact node. 
+### Tools for Visualizing
+* gitk (built-in)
+* tig [Homepage](http://jonas.nitro.dk/tig/)
+* GitHub -> Insight -> Graphs -> Network
+* [More](https://git-scm.com/downloads/guis/)
 
 ## Rebasing vs. Merging
 
