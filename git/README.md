@@ -4,6 +4,12 @@ The goal if this seminar is to promote a deeper understanding of the version
 control software, git, so when you run in to issues down the road, you have a
 strong basis for asking questions and searching for answers. 
 
+I made an  [example repository](https://github.com/previsualconsent/GitSeminar) which I will use to demonstrate some of these features. 
+
+```
+git clone https://github.com/previsualconsent/GitSeminar.git
+git pull --all 
+```
 ## What is a commit?
 
 A commit is specific set of additions/deletions (a patch). The current state of the code
@@ -51,6 +57,32 @@ of the two branches and combines them.
 
 Rebasing allows for a simple linear history of the master branch. Merging is
 simpler to implement but results in a messy history. 
+
+### Merge
+```sh
+git checkout game-loop
+git merge input-validation
+# Fix conflicts
+git add main.cpp
+git commit
+git merge master
+# validate code
+git checkout master
+git merge game-loop # this is guaranteed to work since we already merged master into game-loop
+```
+### Rebase
+```sh
+git rebase  input-validation game-loop
+# fix conflict
+git add main.cpp
+git rebase --continue
+
+git rebase master game-loop
+# validate
+git checkout master
+git merge game-loop
+```
+
 * [Git Documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 * [Example Network](https://github.com/previsualconsent/GitSeminarMergeRebase/network)
 
