@@ -13,5 +13,5 @@ applicable to any researcher.
 > handle everything from small to very large projects with speed and efficiency.
 (From the [Git Homepage](https://git-scm.com/))
 
-This seminar will focus on understanding how git works over giving a tutorial on
+[This seminar](git/) will focus on understanding how git works over giving a tutorial on
 the commands. 
